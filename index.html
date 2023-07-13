@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image" href="jumia-seeklogo.com (1).svg">
+    <title>SHopping cart</title>
+    <link rel="icon" href="jumia-seeklogo.com (1).svg">
 </head>
 <body>
-    <h1>Joe and Njeri Olive Oil</h1>
-    <form>
-        <h2>Select Item To Purchase</h2>
-        <input type="radio" id="premium" name="oils" value="1000">
-        <label for="premium">Premium Olive Oil</label> <br>
-        <input type="radio" id="special" name="oils" value="800">
-        <label for="special">Special Olive Oil</label> <br>
-        <input type="radio" id="regular" name="oils" value="500">
-        <label for="regular">Regular Olive Oil</label> <br> <br>
-       
+    <div>
+        <h1>Welcome to Joe & Njeri Mini-mart</h1> <br>
+        <form>
+            <input type="radio" name="oil" value="premium">Premium <br> <br>
+            <input type="radio" name="oil" value="special">Special <br> <br>
+            <input type="radio" name="oil" value="regular">Regular <br> <br>
 
-        <h4>Enter the number of items</h4>
-        <input type="number" id="numb" placeholder="Enter number "> <br> <br>
+            <!-- creating an input by the user -->
+            <h3>Please entry the number of bottles:</h3>
+            <input type="number" id="bottle"> <br><br>
 
+            <!-- setting the shipping selection option for the user -->
+            <h3>Select your shipping location:</h3>
 
+            <select name="location" id="location">
+                <option value="">Select</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <option value="nakuru">Nakuru</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="kiambu">Kiambu</option>
+            </select> <br><br>
 
-        <input type="submit" id="submit"> <br> <br>
+            Vat: <span id="totalTax"></span> <br>
+            Shipping Fee: <span id="shipping"></span> <br>
+            Total Amount: <span id="total"></span> <br><br>
+            <input type="submit" name="button" id="buy">
 
-
-        Total Tax:$ <label for="totalTax" id="totalTax">0</label> <br>
-        
-        Total:$ <label for="total" id="total" >0</label>
-    </form>
-
-    <form action="">
-
-        
-
-    </form>
-
+        </form>
+    </div>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
